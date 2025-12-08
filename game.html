@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOOM BOY - Playing</title>
+    <title>DOOM BOY - Red Edition</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
         * { box-sizing: border-box; font-family: 'Press Start 2P', cursive; }
@@ -16,21 +16,21 @@
             justify-content: center;
         }
 
-        /* --- O GAME BOY (Repetido para manter consistência) --- */
+        /* --- O GAME BOY (Agora Vermelho) --- */
         .gameboy {
-            background-color: #c0c0c0;
+            background-color: #dc0000; /* ALTERADO PARA VERMELHO */
             width: 320px;
             height: 540px;
             border-radius: 15px 15px 60px 15px;
             padding: 20px;
             box-shadow: 
-                inset 5px 5px 10px rgba(255,255,255,0.4),
+                inset 5px 5px 10px rgba(255,255,255,0.3),
                 10px 10px 20px rgba(0,0,0,0.5);
             position: relative;
         }
 
         .screen-bezel {
-            background-color: #777;
+            background-color: #555; /* Um pouco mais escuro para contrastar com o vermelho */
             border-radius: 10px 10px 40px 10px;
             padding: 30px 40px;
             box-shadow: inset 2px 2px 5px rgba(0,0,0,0.3);
@@ -157,7 +157,7 @@
         .btn-round {
             width: 40px;
             height: 40px;
-            background-color: #8B0000;
+            background-color: #222; /* ALTERADO: Botões pretos ficam melhores no fundo vermelho */
             border-radius: 50%;
             box-shadow: 2px 2px 5px rgba(0,0,0,0.3), inset -2px -2px 5px rgba(0,0,0,0.2);
             cursor: pointer;
@@ -170,10 +170,10 @@
 
         .option-buttons { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); display: flex; gap: 15px; }
         .btn-pill { width: 50px; height: 12px; background-color: #999; border-radius: 10px; transform: rotate(-25deg); border: 1px solid #777; box-shadow: 1px 1px 2px rgba(0,0,0,0.3); }
-        .pill-label { font-size: 10px; color: #555; text-align: center; margin-top: 5px; transform: rotate(-25deg); display: block; margin-left: -5px; }
+        .pill-label { font-size: 10px; color: #333; text-align: center; margin-top: 5px; transform: rotate(-25deg); display: block; margin-left: -5px; }
 
         .speaker { position: absolute; bottom: 20px; right: 20px; }
-        .speaker-slot { width: 60px; height: 4px; background-color: rgba(0,0,0,0.1); margin-bottom: 4px; border-radius: 2px; transform: rotate(-25deg); }
+        .speaker-slot { width: 60px; height: 4px; background-color: rgba(0,0,0,0.2); margin-bottom: 4px; border-radius: 2px; transform: rotate(-25deg); }
 
     </style>
 </head>
@@ -182,7 +182,7 @@
     <div class="gameboy">
         <div class="screen-bezel">
             <div class="bezel-lines"></div>
-            <div class="bezel-text">DOT MATRIX WITH STEREO SOUND</div>
+            <div class="bezel-text">DOT MATRIX WITH STEREO</div>
             <div class="battery-light"></div> <div class="lcd-screen">
                 
                 <div class="hud-top">
@@ -205,7 +205,7 @@
                         <div>50</div>
                     </div>
                     <div class="face-box">😬</div>
-                    <div style="text-align: right;">
+                    <div style="text-align: right">
                         <div>HP</div>
                         <div>100%</div>
                     </div>
