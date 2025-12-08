@@ -174,7 +174,8 @@
 
         .speaker { position: absolute; bottom: 20px; right: 20px; }
         .speaker-slot { width: 60px; height: 4px; background-color: rgba(0,0,0,0.2); margin-bottom: 4px; border-radius: 2px; transform: rotate(-25deg); }
-
+        
+        #slayer{ width: 30px; height: 30px; }
     </style>
 </head>
 <body>
@@ -186,8 +187,8 @@
             <div class="battery-light"></div> <div class="lcd-screen">
                 
                 <div class="hud-top">
-                    <span>SCORE: 666</span>
-                    <span>Lvl: E1M1</span>
+                    <span>PTS: 666</span>
+                    <span>Nv: E1M1</span>
                 </div>
 
                 <div class="reels-container">
@@ -197,17 +198,17 @@
                     <div class="reel">💀</div>
                 </div>
 
-                <div style="text-align: center; font-size: 0.5rem; margin: 5px 0;">PRESS 'A' TO FIRE</div>
+                <div style="text-align: center; font-size: 0.5rem; margin: 5px 0;">PRESSIONE 'A' PARA JOGAR</div>
 
                 <div class="hud-bottom">
                     <div>
-                        <div>AMMO</div>
-                        <div>50</div>
+                        <div title="Tentativas">AMMO</div>
+                        <div title="Tentativas">50</div>
                     </div>
-                    <div class="face-box">😬</div>
+                    <div class="face-box"><img id="slayer" src="http://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfx8TmExCQnlonOq9pgP_RGtstEiU6GAOq3Q&s" /></div>
                     <div style="text-align: right">
-                        <div>HP</div>
-                        <div>100%</div>
+                        <div title="Dinheiro disponivel">SANGUE</div>
+                        <div title="Dinheiro disponivel">100%</div>
                     </div>
                 </div>
 
@@ -235,11 +236,11 @@
             <div class="option-buttons">
                 <div>
                     <div class="btn-pill"></div>
-                    <span class="pill-label">SELECT</span>
+                    <span class="pill-label" id="off">DESLIGAR</span>
                 </div>
                 <div style="margin-left: 10px;">
                     <div class="btn-pill"></div>
-                    <span class="pill-label">START</span>
+                    <span class="pill-label">COMEÇAR</span>
                 </div>
             </div>
 
