@@ -8,12 +8,6 @@ Um projeto de interface web desenvolvido puramente com **HTML e CSS** (sem depen
 ![CSS](https://img.shields.io/badge/CSS-Advanced-blue)
 ![Theme](https://img.shields.io/badge/Theme-Doom%20x%20Retro-red)
 
-## 📸 Screenshots
-
-<div align="center">
-  <img src="assets/preview.png" alt="Tela do DOOM BOY" width="300px">
-</div>
-
 ## 🎮 Funcionalidades
 
 * **Design Responsivo:** Centralizado e escalável.
