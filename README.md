@@ -4,7 +4,6 @@ Um projeto de interface web desenvolvido puramente com **HTML e CSS** (sem depen
 
 ![Status do Projeto](https://img.shields.io/badge/Status-Em_Andamento-brightblue)
 ![CSS](https://img.shields.io/badge/CSS-Advanced-blue)
-![HTML](https://img.shields.io/badge/HTML-Advanced-blue)
 ![Theme](https://img.shields.io/badge/Theme-Doom%20x%20Retro-red)
 
 ## 🎮 Funcionalidades
