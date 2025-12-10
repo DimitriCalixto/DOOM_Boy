@@ -3,7 +3,8 @@
 Um projeto de interface web desenvolvido puramente com **HTML e CSS** (sem dependência de JavaScript complexo), simulando a experiência de jogar um caça-níquel temático de DOOM em um Game Boy clássico modificado.
 
 ![Status do Projeto](https://img.shields.io/badge/Status-Em_Andamento-brightblue)
-![CSS e HTML](https://img.shields.io/badge/CSS-Advanced-blue)
+![CSS](https://img.shields.io/badge/CSS-Advanced-blue)
+![HTML](https://img.shields.io/badge/HTML-Advanced-blue)
 ![Theme](https://img.shields.io/badge/Theme-Doom%20x%20Retro-red)
 
 ## 🎮 Funcionalidades
