@@ -23,7 +23,7 @@ a {
 }
 
 /* =========================================
-   2. ESTRUTURA DO GAME BOY (Carcaça)
+   2. ESTRUTURA DO GAME BOY
    ========================================= */
 .gameboy {
     background-color: #a50000; /* Vermelho Clássico */
@@ -38,12 +38,13 @@ a {
 }
 
 /* --- MOLDURA DA TELA (Cinza Escuro) --- */
+
 .screen-bezel {
     background-color: #303030;
     border-radius: 10px 10px 40px 10px;
-    padding: 30px 40px;
+    padding: 30px 30px 10px;
     box-shadow: inset 2px 2px 5px rgba(0,0,0,0.8);
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -100,20 +101,40 @@ a {
     text-shadow: 2px 2px 0px rgba(15, 56, 15, 0.4);
 }
 
+/* Animação de Texto - Tela Principal*/
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 .blink-text {
     font-size: 0.6rem;
     margin-top: 20px;
     animation: blink 1s infinite;
 }
 
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
+/* Animação de Texto - Tela Secundaria*/
+.sec-title {
+    color: rgb(78, 44, 0);
+    will-change: transform;
+    animation: blink 3s infinite, flutuar 3s ease-in-out infinite;
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 /* =========================================
-   4. ELEMENTOS DO JOGO (Vindo do CSS-2)
+   4. ELEMENTOS DO JOGO
    ========================================= */
 /* Topo do HUD (Score, etc) */
 .hud-top {
@@ -140,29 +161,19 @@ a {
 }
 
 .reel {
-    background: #8bac0f; /* Cor da tela dentro do rolo */
+    /* Cor da tela dentro do rolo */
+    background: #8bac0f; 
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.8rem;
     
-    /* Truque do Emoji LCD */
+    /* Emoji LCD */
     color: transparent;
     opacity: 0.7;
     text-shadow: 0 0 0 #0f380f; /* Cria silhueta flat */
     filter: drop-shadow(0px 2px 0px rgba(0,0,0,0.2));
-}
-
-/* Linha de Pagamento */
-.payline {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: rgba(15, 56, 15, 0.5);
-    z-index: 5;
 }
 
 /* Rodapé do HUD */
@@ -191,6 +202,11 @@ a {
     filter: grayscale(100%) contrast(150%); 
     mix-blend-mode: multiply; 
     opacity: 0.9; 
+}
+
+#sub-gbp {
+    font-size: 10px;
+    margin: 10px;
 }
 
 /* =========================================
@@ -281,30 +297,37 @@ a {
     gap: 15px;
 }
 
+/* Bottons */
 .btn-pill {
     width: 50px;
     height: 12px;
-    background-color: #999;
+    background-color: #6e6e6e;
     border-radius: 10px;
-    transform: rotate(-25deg);
-    border: 1px solid #777;
+    border: 1px solid #444444;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
+.btn-pill:active {
+    box-shadow: inset 1px 1px 1px rgba(0,0,0,0.5);
+    transform: scale(0.95);
+}
+
+/* Text bottons */
 .pill-label {
-    font-size: 10px;
+    font-size: 8px;
     color: #bdbdbd;
     text-align: center;
     margin-top: 5px;
-    transform: rotate(-25deg);
     display: block;
-    margin-left: -5px;
+    margin-left: -4px;
 }
 
-/* --- SAÍDA DE SOM --- */
+
+
+/* --- Linhas de Detalhes --- */
 .speaker {
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
     right: 20px;
 }
 .speaker-slot {
