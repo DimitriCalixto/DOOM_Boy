@@ -33,5 +33,5 @@ doom-boy/
 │   └── doomFaceIcon.jpg
 ├── index.html       # Tela Inicial (Menu)
 ├── game.html        # Tela do Jogo (Slots)
-├── style.css        # (ou styleTwo.css) Estilização principal
+├── style.css        # Estilização
 └── README.md
