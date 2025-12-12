@@ -12,6 +12,9 @@
 
 body {
     background-color: #222;
+    background-image: url('assets/backgroundSpace.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -49,17 +52,6 @@ a {
 }
 
 /* Linhas decorativas (Azul e Vermelho escuro) */
-.bezel-lines {
-    position: absolute;
-    top: 10px;
-    left: 15px;
-    width: 90%;
-    height: 2px;
-    border-top: 2px solid #8b0000;
-    border-bottom: 2px solid #00008b;
-    opacity: 0.5;
-    pointer-events: none;
-}
 
 /* Luz da Bateria */
 .battery-light {
@@ -71,6 +63,13 @@ a {
     position: absolute;
     top: 40%;
     left: 10px;
+}
+
+#text-power {
+    font-size: 5px;
+    margin-top: 14px;
+    margin-left: -5px;
+    color: #3e473d;
 }
 
 /* =========================================
@@ -133,6 +132,10 @@ a {
     }
 }
 
+@keyframes off{
+
+}
+
 /* =========================================
    4. ELEMENTOS DO JOGO
    ========================================= */
@@ -145,6 +148,10 @@ a {
     padding-bottom: 2px;
     margin-bottom: 5px;
     width: 100%;
+}
+
+.saldoTxt {
+    margin-top: 2px;
 }
 
 /* Container dos Rolos (Slots) */
@@ -192,6 +199,7 @@ a {
     padding: 2px;
     font-size: 1.2rem;
     line-height: 1;
+    margin-left: -14px;
 }
 
 /* Estilo para Imagem Customizada (ex: Slayer) */
@@ -201,12 +209,26 @@ a {
     /* Truque para integrar imagem ao LCD */
     filter: grayscale(100%) contrast(150%); 
     mix-blend-mode: multiply; 
-    opacity: 0.9; 
+    opacity: 0.9;
 }
 
 #sub-gbp {
-    font-size: 10px;
+    font-size: 15px;
     margin: 10px;
+    color: #3e473d;
+    margin-left: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#sub-gbp mark {
+    font-size: 9px;
+    padding-top: 4px;
+    padding-right: 4px;
+    margin: 10px;
+    margin-left: 3px;
+    background-color: #3e473d;
+    color: #303030;
+    font-family: monospace;
 }
 
 /* =========================================
@@ -225,24 +247,40 @@ a {
     width: 90px;
     height: 90px;
 }
+
 .d-pad div { 
-    background-color: #333; 
+    background-color: #222; 
     position: absolute; 
     border-radius: 3px; 
     box-shadow: 2px 2px 0 rgba(0,0,0,0.2); 
 }
-.d-pad .h { width: 100%; height: 30px; top: 30px; }
-.d-pad .v { width: 30px; height: 100%; left: 30px; }
+
+/* Setinhas Y*/
+.d-pad .fbtn-y { 
+    width: 100%; 
+    height: 30px; 
+    top: 30px; 
+    cursor: pointer;
+}
+/* Setinhas X*/
+.d-pad .fbtn-x { 
+    width: 30px; 
+    height: 100%; 
+    left: 30px; 
+    cursor: pointer;
+}
+
 .d-pad .middle { 
     width: 30px; 
     height: 30px; 
     top: 30px; 
     left: 30px; 
-    background: radial-gradient(circle, #222 10%, #333 80%); 
-    z-index: 2;
+    cursor: pointer;
+    background: radial-gradient(circle, #000000d5 10%, #252525); 
 }
 
 /* --- BOTÕES A e B --- */
+
 .action-buttons {
     position: absolute;
     top: 30px;
@@ -264,11 +302,19 @@ a {
     background-color: #222; /* Preto (contraste com vermelho) */
     border-radius: 50%;
     box-shadow: 
-        2px 2px 5px rgba(0,0,0,0.3), 
-        inset -2px -2px 5px rgba(0,0,0,0.2);
+    2px 2px 5px rgba(0,0,0,0.3), 
+    inset -2px -2px 5px rgba(0,0,0,0.2);
     cursor: pointer;
     border: none;
     transition: all 0.1s;
+}
+
+#btn-A {
+    background-color: #222;
+}
+
+#btn-B {
+    background-color: #bdbdbd;
 }
 
 /* Efeito de clique físico */
