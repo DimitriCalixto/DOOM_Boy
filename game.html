@@ -11,12 +11,11 @@
     <h1 class="sec-title" style="margin-left: -32px;">DOOM</h1>
     <div class="gameboy">
         <div class="screen-bezel">
-            <div class="bezel-lines"></div>
-            <div class="battery-light"></div> <div class="lcd-screen">
+            <div class="battery-light"><p id="text-power">power</p></div><div class="lcd-screen">
                 
                 <div class="hud-top">
                     <span>PTS: 666</span>
-                    <span>Nv: E1M1</span>
+                    <span>Nv: VICIADO</span>
                 </div>
 
                 <div class="reels-container">
@@ -28,45 +27,46 @@
                 <div style="text-align: center; font-size: 0.5rem; margin: 5px 0;">PRESSIONE 'A' PARA JOGAR</div>
 
                 <div class="hud-bottom">
-                    <div>
-                        <div title="Tentativas">AMMO</div>
-                        <div title="Tentativas">50</div>
+                    <div style="text-align: left">
+                        <div title="Investidas">INVEST.</div>
+                        <div class="saldoTxt" title="Investidas">50</div>
                     </div>
                     <div class="face-box"><img id="slayer" src="assets/doomFaceIcon.png" /></div>
                     <div style="text-align: right">
                         <div title="Dinheiro disponivel">COINS</div>
-                        <div title="Dinheiro disponivel">9562</div>
+                        <div class="saldoTxt" title="Dinheiro disponivel">9562</div>
                     </div>
                 </div>
 
             </div>
-            <h2 id="sub-gbp">GAME BOY pocket</h2>
+            <h2 id="sub-gbp">GAME BOY<mark>pocket</mark></h2>
         </div>
 
         <div class="controls-area">
 
             <div class="d-pad">
-                <div class="h"></div>
-                <div class="v"></div>
+                <div class="fbtn-y"></div>
+                <div class="fbtn-x"></div>
                 <div class="middle"></div>
             </div>
 
             <div class="action-buttons">
 
                 <div class="btn-group">
-                    <button class="btn-round" style="margin-top: 20px;"></button>
+                    <a href="index.html" target="_self" class="btn-round" id="btn-A" title="Start Game" style="margin-top: 20px;"></a>
                     <span class="btn-label"></span>
                 </div>
                 <div class="btn-group">
-                    <div class="btn-round" style="margin-top: 20px;"></div>
+                    <button class="btn-round" id="btn-B" style="margin-top: 20px;"></button>
                     <span class="btn-label"></span>
                 </div>
+                
             </div>
 
             <div class="option-buttons">
                 <div>
                     <div class="btn-pill"></div>
-                    <span class="pill-label" id="off">DESLIGAR</span>
+                    <span class="pill-label">DESLIGAR</span>
                 </div>
                 <div style="margin-left: 10px;">
                     <a href="index.html" target="_self">
